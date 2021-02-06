@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<SpawnGroups>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-AS1Stormfire</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:INCON]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>1.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) AS-1 Stormfire">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>AS-1 Stormfire</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-InstinctAtmosphericFrigate</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:IMBER]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ShiftBlockColorsHue:true]
+      [ShiftBlockColorAmount:200]
+      [AssignGridSkin:SciFi_Armor]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>1.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Instinct - Atmospheric Frigate">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <BeaconText>Instinct - Atmospheric Frigate</BeaconText>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-INTRUDER-III-EscortCarrier</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:INCON]
+      [ReplenishSystems:true]
+      [ShiftBlockColorsHue:true]
+      [RandomHueShift:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>2.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) INTRUDER III Escort Carrier">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>INTRUDER III Escort Carrier</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-MobileDrillingPlatform</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:IMBER]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ShiftBlockColorsHue:true]
+      [ShiftBlockColorAmount:200]
+      [AssignGridSkin:SciFi_Armor]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>3.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Mobile Drilling Platform">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <BeaconText>Mobile Drilling Platform</BeaconText>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-ObanTide</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [FactionOwner:PARALLAX]
+      [DisableDampeners:false]
+      [PlanetRequiresAtmo:false]
+
+      [SkipAirDensityCheck:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>1.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Oban Tide">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>Oban Tide</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-SkyFactory</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:IMBER]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ShiftBlockColorsHue:true]
+      [ShiftBlockColorAmount:200]
+      [AssignGridSkin:SciFi_Armor]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>2.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Sky Factory">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <BeaconText>Sky Factory</BeaconText>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-SpiritOfLomond</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:PARALLAX]
+
+      [SkipAirDensityCheck:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>2.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Spirit of Lomond">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>Spirit of Lomond</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-SS-1SerenityMK2</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:INCON]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>2.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) SS-1 Serenity MK.2">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>SS-1 Serenity MK.2</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-SS-11Harpy</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:INCON]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>3.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) SS-11 Harpy">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>SS-11 Harpy</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-SS-19Serenity-X</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:INCON]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>2.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) SS-19 Serenity-X">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>SS-19 Serenity-X</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-SuperGremlin</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [PlanetRequiresAtmo:false]
+      [FactionOwner:INCON]
+
+      [SkipAirDensityCheck:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>2.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Super Gremlin">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>Super Gremlin</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-SupplyTransport</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:IMBER]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ShiftBlockColorsHue:true]
+      [ShiftBlockColorAmount:200]
+      [AssignGridSkin:SciFi_Armor]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>4.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Supply Transport">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>Supply Transport</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-TheScutlerMk7</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:INCON]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>3.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) The Scutler Mk 7">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>The Scutler Mk 7</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-TransportCourier</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:IMBER]
+      [ReplenishSystems:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ShiftBlockColorsHue:true]
+      [ShiftBlockColorAmount:200]
+      [AssignGridSkin:SciFi_Armor]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>5.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) Transport Courier">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <BeaconText>Transport Courier</BeaconText>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+  <SpawnGroup>
+    <Id>
+      <TypeId>SpawnGroupDefinition</TypeId>
+      <SubtypeId>AirTraffic-SpawnGroup-WMIHunchbackDropship</SubtypeId>
+    </Id>
+    <Description>
+
+      [Modular Encounters SpawnGroup]
+      [AtmosphericCargoShip:true]
+      [DisableDampeners:false]
+      [FactionOwner:INCON]
+
+      [SkipAirDensityCheck:true]
+
+      [UseRivalAi:true]
+      [RivalAiReplaceRemoteControl:true]
+
+      [ReplaceArmorBlocksWithModules:true]
+      [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+    </Description>
+    <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+    <Frequency>2.0</Frequency>
+    <IsPirate>true</IsPirate>
+    <Prefabs>
+      <Prefab SubtypeId="(NPC-ATM) WMI Hunchback Dropship">
+        <Position>
+          <X>0.0</X>
+          <Y>0.0</Y>
+          <Z>0.0</Z>
+        </Position>
+        <BeaconText>WMI Hunchback Dropship</BeaconText>
+        <Behaviour>AirTraffic-Behavior-CargoShip</Behaviour>
+        <Speed>20.0</Speed>
+      </Prefab>
+    </Prefabs>
+  </SpawnGroup>
+
+
+</SpawnGroups>
+</Definitions>
+

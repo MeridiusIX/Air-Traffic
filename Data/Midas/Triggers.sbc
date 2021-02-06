@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasGeneralDamage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:Damage]
+			[DamageTypes:Any]
+			[MinCooldownMs:100]
+			[MaxCooldownMs:101]
+			
+            [Actions:RAI-Action-AirTraffic-MidasGeneralDamage]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasPlayerNearHostileLight</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:1500]
+			[StartsReady:true]
+			[MaxActions:3]
+			[MinPlayerReputation:-1000]
+			[MaxPlayerReputation:-500]
+			[MinCooldownMs:60000]
+			[MaxCooldownMs:120001]
+			
+            [Actions:RAI-Action-AirTraffic-MidasPlayerNearHostileLight]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasPlayerNearHostileHeavy</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:1500]
+			[StartsReady:true]
+			[MaxActions:3]
+			[MinPlayerReputation:-1500]
+			[MaxPlayerReputation:-1001]
+			[MinCooldownMs:60000]
+			[MaxCooldownMs:120001]
+			
+            [Actions:RAI-Action-AirTraffic-MidasPlayerNearHostileHeavy]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasInstinctPlayerNear2000</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:2000]
+			[StartsReady:true]
+			[MaxActions:1]
+			[MinPlayerReputation:-500]
+
+            [Actions:RAI-Action-AirTraffic-MidasInstinctPlayerNear2000]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasInstinctPlayerNear1000</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:1000]
+			[StartsReady:true]
+			[MinPlayerReputation:-500]
+
+            [Actions:RAI-Action-AirTraffic-MidasInstinctPlayerNear1000]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasTransportCourierPlayerNear1500</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:1500]
+			[StartsReady:true]
+			[MinCooldownMs:1000]
+			[MaxCooldownMs:1001]
+
+            [Actions:RAI-Action-AirTraffic-MidasTransportCourierPlayerNear1500]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasTransportCourierDamage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:Damage]
+			[DamageTypes:Any]
+			[MinCooldownMs:5000]
+			[MaxCooldownMs:5001]
+			
+            [Actions:RAI-Action-AirTraffic-MidasTransportCourierDamage]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasTransportCourierTimerCounter</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:Timer]
+			[Conditions:RAI-Condition-AirTraffic-MidasTransportCourierTimerCounter]
+			[ConditionCheckResetsTimer:true]
+			[MinCooldownMs:1000]
+			[MaxCooldownMs:1001]
+			[MaxActions:1]
+			
+            [Actions:RAI-Action-AirTraffic-MidasTransportCourierTimerCounter]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasSupplyTransportTimer</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:Timer]
+			[MinCooldownMs:10000]
+			[MaxCooldownMs:10001]
+			[MaxActions:1]
+			
+            [Actions:RAI-Action-AirTraffic-MidasSupplyTransportTimer]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasSupplyTransportPlayerNear1500Hostile</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:1500]
+			[Conditions:RAI-Condition-AirTraffic-MidasSupplyTransportBool]
+			[StartsReady:true]
+			[MinPlayerReputation:-1500]
+			[MaxPlayerReputation:-500]
+
+            [Actions:RAI-Action-AirTraffic-MidasSupplyTransportPlayerNear1500Hostile]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasSupplyTransportPlayerNear1500</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:PlayerNear]
+			[TargetDistance:1500]
+			[Conditions:RAI-Condition-AirTraffic-MidasSupplyTransportBool]
+			[StartsReady:true]
+			[MinPlayerReputation:-499]
+			[MaxPlayerReputation:1501]
+
+            [Actions:RAI-Action-AirTraffic-MidasSupplyTransportPlayerNear1500]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Trigger-AirTraffic-MidasPirateDamage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[Type:Damage]
+			[DamageTypes:Any]
+			[MinCooldownMs:250]
+			[MaxCooldownMs:251]
+			[MaxActions:30]
+			
+            [Actions:RAI-Action-AirTraffic-MidasPirateDamage]
+
+			</Description>
+        </EntityComponent>
+		
+	</EntityComponents>
+</Definitions>

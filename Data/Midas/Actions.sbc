@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasGeneralDamage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[ChangeAttackerReputation:true]
+			[ChangeAttackerReputationFaction:MIDAS]
+			[ChangeAttackerReputationAmount:-5]
+			[ReputationChangesForAllAttackPlayerFactionMembers:true]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasPlayerNearHostileLight</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasHostilePlayerNear]
+			
+			[SpawnEncounter:true]
+			[Spawner:RAI-Spawn-AirTraffic-MidasHostilePlayerNearLight]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasPlayerNearHostileHeavy</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasHostilePlayerNear]
+			
+			[SpawnEncounter:true]
+			[Spawner:RAI-Spawn-AirTraffic-MidasHostilePlayerNearHeavy]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasInstinctPlayerNear2000</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasInstinctPlayerNear2000]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasInstinctPlayerNear1000</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasInstinctPlayerNear1000]
+			
+			[ChangeReputationWithPlayers:true]
+			[ReputationChangeRadius:1000]
+			[ReputationChangeFactions:MIDAS]
+			[ReputationChangeAmount:-100]
+			[ReputationChangesForAllRadiusPlayerFactionMembers:true]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasTransportCourierPlayerNear1500</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasTransportCourierPlayerNear1500]
+			
+			[ChangeAutopilotSpeed:true]
+			[NewAutopilotSpeed:100]
+			
+			[IncreaseCounters:PlayerNearTotalTime]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasTransportCourierDamage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasTransportCourierDamage]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasTransportCourierTimerCounter</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasTransportCourierTimer]
+			
+			[SpawnEncounter:true]
+			[Spawner:RAI-Spawn-AirTraffic-MidasTransportCourierTimer]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasSupplyTransportTimer</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasSupplyTransportTimer]
+			
+			[SetBooleansTrue:EventSwitch]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasSupplyTransportPlayerNear1500Hostile</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasSupplyTransportTimerHostile]
+			
+			[ChangeAutopilotSpeed:true]
+			[NewAutopilotSpeed:100]
+			
+			[SetBooleansFalse:EventSwitch]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasSupplyTransportPlayerNear1500</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[UseChatBroadcast:true]
+			[ChatData:RAI-Chat-AirTraffic-MidasSupplyTransportPlayerNear1500]
+
+			[SpawnEncounter:true]
+			[Spawner:RAI-Spawn-AirTraffic-MidasSupplyTransportPlayerNear1500]
+			
+			[SetBooleansFalse:EventSwitch]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Action-AirTraffic-MidasPirateDamage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Action]
+			
+			[ChangeAttackerReputation:true]
+			[ChangeAttackerReputationFaction:MIDAS]
+			[ChangeAttackerReputationAmount:1]
+			[ReputationChangesForAllAttackPlayerFactionMembers:true]
+			
+			</Description>
+        </EntityComponent>
+		
+	</EntityComponents>
+</Definitions>

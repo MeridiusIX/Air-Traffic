@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Spawn-AirTraffic-MidasHostilePlayerNearLight</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Spawn]
+			
+			[UseSpawn:true]
+			[StartsReady:true]
+			[MaxSpawns:3]
+			[SpawnGroups:(NPC-ATM) Midas Security Drone Light]
+			
+			[MinDistance:1400]
+			[MaxDistance:1500]
+			[MinAltitude:800]
+			[MaxAltitude:1000]
+			[IgnoreSafetyChecks:false]
+			[InheritNpcAltitude:true]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Spawn-AirTraffic-MidasHostilePlayerNearHeavy</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Spawn]
+			
+			[UseSpawn:true]
+			[StartsReady:true]
+			[MaxSpawns:3]
+			[SpawnGroups:(NPC-ATM) Midas Security Drone Heavy]
+			
+			[MinDistance:1400]
+			[MaxDistance:1500]
+			[MinAltitude:800]
+			[MaxAltitude:1000]
+			[IgnoreSafetyChecks:false]
+			[InheritNpcAltitude:true]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Spawn-AirTraffic-MidasSupplyTransportPlayerNear1500</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Spawn]
+			
+			[UseSpawn:true]
+			[StartsReady:true]
+			[MaxSpawns:1]
+			[SpawnGroups:(NPC-ATM) Midas Pirate]
+			
+			[MinDistance:1400]
+			[MaxDistance:1500]
+			[MinAltitude:800]
+			[MaxAltitude:1000]
+			[IgnoreSafetyChecks:false]
+			[InheritNpcAltitude:true]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Spawn-AirTraffic-MidasTransportCourierTimer</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Spawn]
+			
+			[UseSpawn:true]
+			[StartsReady:true]
+			[MaxSpawns:1]
+			[SpawnGroups:(NPC-ATM) Midas Pod A]
+			[SpawnGroups:(NPC-ATM) Midas Pod B]
+			
+			[UseRelativeSpawnPosition:true]
+			[RelativeSpawnOffset:{X:0 Y:50 Z:0}]
+			[RelativeSpawnVelocity:{X:0 Y:100 Z:-100}]
+			[IgnoreSafetyChecks:true]
+			
+			</Description>
+        </EntityComponent>
+		
+	</EntityComponents>
+</Definitions>

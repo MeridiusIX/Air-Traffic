@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasHostilePlayerNear</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:3]
+            [BroadcastRandomly:true]
+			[Author:MIDAS Dispatch]
+			[Color:Red]
+
+            [ChatMessages:MIDAS Dispatch: Dispatching additional support.]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Notify]
+			
+			[ChatMessages:MIDAS Dispatch: Reinforcements enroute.]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Notify]
+			
+			[ChatMessages:MIDAS Dispatch: Hostile presence detected.]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Notify]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasInstinctPlayerNear2000</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:1]
+            [BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Red]
+
+            [ChatMessages:This airspace is currently restricted. Keep your distance and there will be no trouble.]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasInstinctPlayerNear1000</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:1]
+            [BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Red]
+
+            [ChatMessages:Turn back immediately. Failure to comply will elicit an aggressive response.]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasTransportCourierPlayerNear1500</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:3]
+			[MinTime:10]
+			[MaxTime:11]
+            [BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Red]
+
+            [ChatMessages:You've come to take my gold, haven't you? Well you can't have it! Maximum forward thrust!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			[ChatMessages:You'll never catch me!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			[ChatMessages:Stop chasing me! High speeds make me queasy!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasTransportCourierDamage</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+			[MinTime:5]
+			[MaxTime:6]
+            [BroadcastRandomly:true]
+			[Author:{AntennaName}]
+			[Color:Red]
+
+            [ChatMessages:Stop attacking me! I'm fragile!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			[ChatMessages:My beautiful paint!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			[ChatMessages:Leave me alone you violent brute!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasTransportCourierTimer</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:1]
+            [BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Red]
+
+            [ChatMessages:Ok, you win! Just take it and leave me alone!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasSupplyTransportTimer</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:1]
+            [BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Green]
+
+            [ChatMessages:We could use an escort. There have been reports of pirates in the area.]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasSupplyTransportTimerHostile</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:1]
+            [BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Green]
+
+            [ChatMessages:We don't trust you, given your past actions against us. We'll take our chances alone.]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Chat-AirTraffic-MidasSupplyTransportPlayerNear1500</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Chat]
+			
+			[UseChat:true]
+            [StartsReady:true]
+            [MaxChats:1]
+            [BroadcastRandomly:false]
+			[Author:{AntennaName}]
+			[Color:Green]
+
+            [ChatMessages:You've come to help? We appreciate it! It looks like you're just in time as well, we've got incoming!]
+            [ChatAudio:ArcHudGPSNotification2]
+            [BroadcastChatType:Chat]
+			
+			</Description>
+        </EntityComponent>
+		
+	</EntityComponents>
+</Definitions>

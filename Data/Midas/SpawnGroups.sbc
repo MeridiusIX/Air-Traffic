@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<SpawnGroups>
+
+<!--=========== CARGO SHIP GROUPS ==============-->
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Instinct - Atmospheric Frigate - Midas</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[AtmosphericCargoShip:true]
+	[DisableDampeners:false]
+	[FactionOwner:MIDAS]
+	[ReplenishSystems:true]
+	[UseRivalAi:true]
+	[RivalAiReplaceRemoteControl:true]
+	[RandomNumberRoll:3]
+	
+	[RecolorGrid:true]
+	
+	[RecolorOld:{X:0 Y:0 Z:0.05}]
+	[RecolorNew:{X:0 Y:-0.8 Z:-0.45}]
+	
+	[ReskinTarget:{X:0 Y:-0.97 Z:-0.51}]
+	[ReskinTexture:Golden_Armor]
+	
+	[ReskinTarget:{X:0 Y:-0.8 Z:-0.45}]
+	[ReskinTexture:Clean_Armor]
+	
+	[RequireAnyMods:2043543925,1957582759]
+	
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>1.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="(NPC-ATM) Instinct - Atmospheric Frigate">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Behaviour>RAI-Behavior-AirTraffic-MidasInstinct</Behaviour>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Supply Transport - Midas</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[AtmosphericCargoShip:true]
+	[DisableDampeners:false]
+	[FactionOwner:MIDAS]
+	[ReplenishSystems:true]
+	[RandomNumberRoll:3]
+	[UseRivalAi:true]
+	[RivalAiReplaceRemoteControl:true]
+	[RecolorGrid:true]
+	[ColorReferencePairs:{X:0 Y:0 Z:0.05}|{X:0 Y:-0.8 Z:-0.45}]
+	[ColorSkinReferencePairs:{X:0 Y:-0.97 Z:-0.51}|Golden_Armor,{X:0 Y:-0.8 Z:-0.45}|Clean_Armor]
+	[RequireAnyMods:2043543925,1957582759]
+	  
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>4.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="(NPC-ATM) Supply Transport">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Behaviour>RAI-Behavior-AirTraffic-MidasSupplyTransport</Behaviour>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Transport Courier - Midas</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[AtmosphericCargoShip:true]
+	[DisableDampeners:false]
+	[FactionOwner:MIDAS]
+	[ReplenishSystems:true]
+	[UseRivalAi:true]
+	[RivalAiReplaceRemoteControl:true]
+	[RandomNumberRoll:3]
+	[RecolorGrid:true]
+	[ColorReferencePairs:{X:0 Y:0 Z:0.05}|{X:0 Y:-0.8 Z:-0.45}]
+	[ColorSkinReferencePairs:{X:0 Y:-0.97 Z:-0.51}|Golden_Armor,{X:0 Y:-0.8 Z:-0.45}|Clean_Armor]
+	[RequireAnyMods:2043543925,1957582759]
+	  
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>5.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="(NPC-ATM) Transport Courier">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Behaviour>RAI-Behavior-AirTraffic-MidasTransportCourier</Behaviour>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Midas Pirate</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[RivalAiAnySpawn:true]
+	[DisableDampeners:false]
+	[FactionOwner:SPRT]
+	[ReplenishSystems:true]
+	[UseRivalAi:true]
+	[RivalAiReplaceRemoteControl:true]
+	[RecolorGrid:true]
+	[ColorReferencePairs:{X:0 Y:-1 Z:-0.2}|{X:0 Y:-0.8 Z:-0.45},{X:0.7083333 Y:1 Z:-0.4}|{X:0 Y:-0.8 Z:-0.45}]
+	[ColorSkinReferencePairs:{X:0 Y:-1 Z:1}|Battered_Armor]
+	[ReduceBlockBuildStates:true]
+	  
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>5.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="Spiteful Aggressor mk.III">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Behaviour>RAI-Behavior-AirTraffic-MidasPirateDrone</Behaviour>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Midas Pod A</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[RivalAiAnySpawn:true]
+	[DisableDampeners:false]
+	[FactionOwner:Nobody]
+	[ReplenishSystems:true]
+	  
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>2.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="(NPC-ATM) Midas Pod A">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Midas Pod B</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[RivalAiAnySpawn:true]
+	[DisableDampeners:false]
+	[FactionOwner:Nobody]
+	[ReplenishSystems:true]
+	  
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>3.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="(NPC-ATM) Midas Pod B">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Midas Security Drone Light</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[RivalAiAnySpawn:true]
+	[DisableDampeners:false]
+	[FactionOwner:MIDAS]
+	[ReplenishSystems:true]
+	[UseRivalAi:true]
+	[RivalAiReplaceRemoteControl:true]
+	[RecolorGrid:true]
+	[ColorReferencePairs:{X:0 Y:-1 Z:-0.2}|{X:0 Y:-0.8 Z:-0.45},{X:0.7083333 Y:1 Z:-0.4}|{X:0 Y:-0.8 Z:-0.45}]
+	[ColorSkinReferencePairs:{X:0 Y:-1 Z:1}|Golden_Armor,{X:0 Y:-0.8 Z:-0.45}|Clean_Armor]
+	  
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>5.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="Spiteful Aggressor mk.III">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Behaviour>RAI-Behavior-AirTraffic-MidasSecurityDrone</Behaviour>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+<SpawnGroup>
+	<Id>
+		<TypeId>SpawnGroupDefinition</TypeId>
+		<SubtypeId>(NPC-ATM) Midas Security Drone Heavy</SubtypeId>
+	</Id>
+	<Description>
+	  
+	[Modular Encounters SpawnGroup]
+	[RivalAiAnySpawn:true]
+	[DisableDampeners:false]
+	[FactionOwner:MIDAS]
+	[ReplenishSystems:true]
+	[UseRivalAi:true]
+	[RivalAiReplaceRemoteControl:true]
+	[RecolorGrid:true]
+	[ColorReferencePairs:{X:0 Y:-1 Z:-0.2}|{X:0 Y:-0.8 Z:-0.45},{X:0.7083333 Y:1 Z:-0.4}|{X:0 Y:-0.8 Z:-0.45}]
+	[ColorSkinReferencePairs:{X:0 Y:-1 Z:1}|Golden_Armor,{X:0 Y:-0.8 Z:-0.45}|Clean_Armor]
+	  
+	</Description>
+	<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+	<Frequency>5.0</Frequency>
+	<IsPirate>true</IsPirate>
+	<Prefabs>
+		<Prefab SubtypeId="Spiteful Aggressor mk.III">
+			<Position>
+				<X>0.0</X>
+				<Y>0.0</Y>
+				<Z>0.0</Z>
+			</Position>
+			<Behaviour>RAI-Behavior-AirTraffic-MidasSecurityDrone</Behaviour>
+			<Speed>20.0</Speed>
+		</Prefab>
+	</Prefabs>
+</SpawnGroup>
+
+</SpawnGroups>
+</Definitions>
+

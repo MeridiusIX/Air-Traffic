@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>AirTraffic-Trigger-ShipDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+
+        [DamageTypes:Any]
+
+        [ExcludedDamageTypes:Environment]
+        [ExcludedDamageTypes:Deformation]
+        [ExcludedDamageTypes:Fire]
+
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:60001]
+
+        [StartsReady:true]
+        [MaxActions:3]
+        [Actions:AirTraffic-Action-ShipDamage]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>AirTraffic-Action-ShipDamage</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:45]
+
+        [CancelWaitingAtWaypoint:true]
+        [SwitchToNextWaypoint:true]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:AirTraffic-Trigger-ReturnToSpeed]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:AirTraffic-Trigger-ReturnToSpeed]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

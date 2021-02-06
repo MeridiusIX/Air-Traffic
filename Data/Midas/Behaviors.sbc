@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Behavior-AirTraffic-MidasInstinct</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Behavior]
+			[BehaviorName:Passive]
+			
+			[Triggers:RAI-Trigger-AirTraffic-MidasGeneralDamage]
+			[Triggers:RAI-Trigger-AirTraffic-MidasPlayerNearHostileLight]
+			[Triggers:RAI-Trigger-AirTraffic-MidasPlayerNearHostileHeavy]
+            [Triggers:RAI-Trigger-AirTraffic-MidasInstinctPlayerNear2000]
+			[Triggers:RAI-Trigger-AirTraffic-MidasInstinctPlayerNear1000]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Behavior-AirTraffic-MidasTransportCourier</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Behavior]
+			[BehaviorName:Passive]
+			
+			[Triggers:RAI-Trigger-AirTraffic-MidasGeneralDamage]
+			[Triggers:RAI-Trigger-AirTraffic-MidasPlayerNearHostileLight]
+			[Triggers:RAI-Trigger-AirTraffic-MidasPlayerNearHostileHeavy]
+            [Triggers:RAI-Trigger-AirTraffic-MidasTransportCourierPlayerNear1500]
+			[Triggers:RAI-Trigger-AirTraffic-MidasTransportCourierDamage]
+			[Triggers:RAI-Trigger-AirTraffic-MidasTransportCourierTimerCounter]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Behavior-AirTraffic-MidasSupplyTransport</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Behavior]
+			[BehaviorName:Passive]
+			
+			[Triggers:RAI-Trigger-AirTraffic-MidasGeneralDamage]
+			[Triggers:RAI-Trigger-AirTraffic-MidasPlayerNearHostileLight]
+			[Triggers:RAI-Trigger-AirTraffic-MidasPlayerNearHostileHeavy]
+            [Triggers:RAI-Trigger-AirTraffic-MidasSupplyTransportTimer]
+			[Triggers:RAI-Trigger-AirTraffic-MidasSupplyTransportPlayerNear1500Hostile]
+			[Triggers:RAI-Trigger-AirTraffic-MidasSupplyTransportPlayerNear1500]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Behavior-AirTraffic-MidasPirateDrone</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Behavior]
+			[BehaviorName:Horsefly]
+			
+			[DesiredMaxSpeed:100]
+			[TargetData:RAI-Target-AirTraffic-MidasPirate]
+			
+			[UseDamageDetection:true]
+			[Triggers:RAI-Trigger-AirTraffic-MidasPirateDamage]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Behavior-AirTraffic-MidasSecurityDrone</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Behavior]
+			[BehaviorName:Horsefly]
+			
+			[DesiredMaxSpeed:100]
+			[TargetData:RAI-Target-AirTraffic-MidasDrone]
+			
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Target-AirTraffic-MidasPirate</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Target]
+			
+			[UseCustomTargeting:true]
+			[Target:Block]
+			[BlockTargets:All]
+			[Distance:Closest]
+			[MaxDistance:15000]
+			[Owners:NPC]
+			[Filters:IgnoreSafeZone]
+			[Relations:Enemy]
+
+			</Description>
+        </EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+            <Id>
+                <TypeId>Inventory</TypeId>
+                <SubtypeId>RAI-Target-AirTraffic-MidasDrone</SubtypeId>
+            </Id>
+            <Description>
+			
+			[RivalAI Target]
+			
+			[UseCustomTargeting:true]
+			[Target:Player]
+			[Distance:Closest]
+			[MaxDistance:15000]
+			[Owners:Player]
+			[Filters:IgnoreSafeZone]
+			[Relations:Enemy]
+
+			</Description>
+        </EntityComponent>
+		
+	</EntityComponents>
+</Definitions>
